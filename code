@@ -1,0 +1,9 @@
+import itertools
+def intArray(a):
+    b = list(itertools.permutations(a))
+    c = []
+    x = ""
+    for i in xrange(len(b)):
+        c.append(x.join(map(str, b[i])))
+    return max(c)
+    
